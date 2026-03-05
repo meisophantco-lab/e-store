@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="https://meisophant.name.ng/favicon.png" type="image/x-icon">
+    <link rel="icon" href="https://meisophant.name.ng/favicon.png" type="image/png">
+    <title>Meisophant Digital Services</title>
+</head>
+<body>
+    <header>
+        <h1 class="branding">Meisophant Digitals Store</h1>
+        <br><br>
+    <div class="menu-btn" id="menuBtn">☰</div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="#products">Products</a>
+    </nav>
+    </header>
+    </div>
+    <div class="padding"></div>
+    <section id="products">
+        <div class="products" id="item-grid">
+        <div class="item">
+            <div class="item-name">
+                Landing Page
+            </div>
+            <img src="./assets/images/landing.jpeg" alt="Landing Page">
+            <br><br><br>
+            <span class="price">₦ 82,500</span> <br><br><br><br><br>
+            <a href="./products/landing/" class="check">Check Product</a>
+            <br><br><br>
+        </div>
+        <div class="item">
+            <div class="item-name">
+                Blog Site
+            </div>
+            <img src="./assets/images/blog.jpeg" alt="Blog Site">
+            <br><br>
+            <span class="price">₦ 150,000</span> <br><br><br><br><br>
+            <a href="./products/blog/" class="check">Check Product</a>
+            <br><br><br>
+        </div>
+        <div class="item">
+            <div class="item-name">
+                Business Website
+            </div>
+            <img src="./assets/images/business-website.jpeg" alt="Business Website">
+            <br><br>
+            <span class="price">₦ 255,000</span> <br><br><br><br>
+            <a href="./products/business-site/" class="check">Check Product</a>
+            <br><br><br>
+        </div>
+        <div class="item">
+            <div class="item-name">
+                Custom Website
+            </div>
+            <img src="./assets/images/custom.jpeg" alt="Custom Website">
+            <br><br>
+            <span class="price">₦ 172,500</span> <br><br><br>
+            <a href="./products/custom-site/" class="check">Check Product</a>
+            <br><br><br>
+        </div>
+        <div class="item">
+            <div class="item-name">
+                E-Commerce Website
+            </div>
+            <img src="./assets/images/e-commerce.jpeg" alt="E-Commerce Website">
+            <br><br><br>
+            <span class="price">₦ 652,500</span> <br><br><br><br><br><br>
+            <a href="./products/e-commerce_site/" class="check">Check Product</a>
+            <br><br><br><br><br><br>
+        </div>
+        <div class="item">
+            <div class="item-name">
+                Portfolio Website
+            </div>
+            <img src="./assets/images/portfolio.jpeg" alt="Portfolio Website">
+            <br><br><br><br>
+            <span class="price">₦ 187,500</span> <br><br><br><br><br>
+            <a href="./products/portfolio/" class="check">Check Product</a>
+            <br><br><br>
+        </div>
+    </div>
+    </section>
+    <div class="legal-links">
+      <a href="./privacy-policy.html">Privacy Policy</a> |
+      <a href="./terms.html">Terms & Conditions</a>
+    </div>
+
+    <footer>
+        &copy;Copyright, Meisophant Digital Services, 2026
+    </footer><script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+      menuBtn.textContent = navMenu.classList.contains("show") ? "✕" : "☰";
+    });
+  </script>
+</body>
+</html>
