@@ -1,100 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meisophant Digital Services</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" href="https://meisophant.name.ng/favicon.png" type="image/x-icon">
-    <link rel="icon" href="https://meisophant.name.ng/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meisophant Digital Store</title>
+  <meta name="description" content="Browse and order professional website packages from Meisophant Digital Services — landing pages, blogs, eCommerce, and more.">
+  <link rel="shortcut icon" href="https://meisophant.name.ng/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://meisophant.name.ng/favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1 class="branding">Meisophant Digitals Store</h1>
-        <div class="menu-btn" id="menuBtn">☰</div>
-        <nav class="nav" id="navMenu">
-            <a href="index.html">Home</a>
-            <a href="#products">Products</a>
-        </nav>
-    </header>
 
-    <div class="padding"></div>
+  <!-- ===== HEADER ===== -->
+  <header class="store-header">
+    <a href="index.html" class="store-brand">
+      <div class="brand-dot"></div>
+      Meisophant <span>Store</span>
+    </a>
+    <div class="header-right">
+      <button class="store-menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <nav class="store-nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="https://meisophant.name.ng" target="_blank" rel="noopener">Main Site ↗</a>
+      </nav>
+    </div>
+  </header>
 
-    <section id="products">
-        <div class="products" id="item-grid">
-            <!-- Product 1 -->
-            <div class="item">
-                <div class="item-name">Landing Page</div>
-                <img data-src="./assets/images/landing.jpeg" alt="Landing Page" class="product-img lazy">
-                <span class="price">₦ 95,000</span>
-                <a href="./products/landing/" class="check">Check Product</a>
-            </div>
+  <!-- ===== HERO ===== -->
+  <section class="store-hero">
+    <div class="store-hero-orb"></div>
+    <div class="store-hero-grid"></div>
+    <div class="store-hero-inner">
+      <div class="store-badge">
+        <span class="store-badge-dot"></span>
+        Digital Products · Ready to Launch
+      </div>
+      <h1>Get Your <em>Website</em><br>Built & Delivered</h1>
+      <p>Professional website packages crafted by Meisophant Digital Services. Browse, pick your plan, and we'll build it for you.</p>
+      <a href="#products" class="store-hero-btn">Browse Products ↓</a>
+    </div>
+    <div class="store-hero-stats">
+      <div class="store-stat">
+        <span class="store-stat-num">6<span>+</span></span>
+        <span class="store-stat-label">Website Types</span>
+      </div>
+      <div class="store-stat-divider"></div>
+      <div class="store-stat">
+        <span class="store-stat-num">₦95k<span>+</span></span>
+        <span class="store-stat-label">Starting Price</span>
+      </div>
+      <div class="store-stat-divider"></div>
+      <div class="store-stat">
+        <span class="store-stat-num">24<span>h</span></span>
+        <span class="store-stat-label">Response Time</span>
+      </div>
+    </div>
+  </section>
 
-            <!-- Product 2 -->
-            <div class="item">
-                <div class="item-name">Blog Site</div>
-                <img data-src="./assets/images/blog.jpeg" alt="Blog Site" class="product-img lazy">
-                <span class="price">₦ 165,000</span>
-                <a href="./products/blog/" class="check">Check Product</a>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="item">
-                <div class="item-name">Business Website</div>
-                <img data-src="./assets/images/business-website.jpeg" alt="Business Website" class="product-img lazy">
-                <span class="price">₦ 280,000</span>
-                <a href="./products/business-site/" class="check">Check Product</a>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="item">
-                <div class="item-name">Custom Website</div>
-                <img data-src="./assets/images/custom.jpeg" alt="Custom Website" class="product-img lazy">
-                <span class="price">₦ 200,000</span>
-                <a href="./products/custom-site/" class="check">Check Product</a>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="item">
-                <div class="item-name">E-Commerce Website</div>
-                <img data-src="./assets/images/e-commerce.jpeg" alt="E-Commerce Website" class="product-img lazy">
-                <span class="price">₦ 720,000</span>
-                <a href="./products/e-commerce_site/" class="check">Check Product</a>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="item">
-                <div class="item-name">Portfolio Website</div>
-                <img data-src="./assets/images/portfolio.jpeg" alt="Portfolio Website" class="product-img lazy">
-                <span class="price">₦ 210,000</span>
-                <a href="./products/portfolio/" class="check">Check Product</a>
-            </div>
-        </div>
-    </section>
-
-    <div class="legal-links">
-        <a href="./privacy-policy.html">Privacy Policy</a> |
-        <a href="./terms.html">Terms & Conditions</a>
+  <!-- ===== PRODUCTS ===== -->
+  <section class="store-products" id="products">
+    <div class="store-products-header">
+      <p class="store-label">Our Packages</p>
+      <h2>Website Products</h2>
+      <p class="store-products-sub">Every package is built from scratch, tailored to your brand, and delivered with full support.</p>
     </div>
 
-    <footer>
-        &copy;Copyright, Meisophant Digital Services, 2026
-    </footer>
+    <div class="store-grid" id="item-grid">
 
-    <!-- External JS files -->
-    <script src="./script.js" defer></script>
-    <script src="./img-load.js" defer></script>
+      <!-- LANDING PAGE -->
+      <div class="store-card">
+        <div class="store-card-img-wrap">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="store-card-svg">
+            <rect width="400" height="220" fill="#0d0a1a"/>
+            <!-- grid -->
+            <line x1="0" y1="40" x2="400" y2="40" stroke="#9370db22" stroke-width="1"/>
+            <line x1="0" y1="80" x2="400" y2="80" stroke="#9370db22" stroke-width="1"/>
+            <line x1="0" y1="120" x2="400" y2="120" stroke="#9370db22" stroke-width="1"/>
+            <line x1="0" y1="160" x2="400" y2="160" stroke="#9370db22" stroke-width="1"/>
+            <line x1="80" y1="0" x2="80" y2="220" stroke="#9370db22" stroke-width="1"/>
+            <line x1="160" y1="0" x2="160" y2="220" stroke="#9370db22" stroke-width="1"/>
+            <line x1="240" y1="0" x2="240" y2="220" stroke="#9370db22" stroke-width="1"/>
+            <line x1="320" y1="0" x2="320" y2="220" stroke="#9370db22" stroke-width="1"/>
+            <!-- nav bar mockup -->
+            <rect x="30" y="22" width="340" height="28" rx="6" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <circle cx="50" cy="36" r="6" fill="#9370db"/>
+            <rect x="65" y="32" width="30" height="7" rx="3" fill="#9370db66"/>
+            <rect x="270" y="32" width="22" height="7" rx="3" fill="#9370db44"/>
+            <rect x="298" y="32" width="22" height="7" rx="3" fill="#9370db44"/>
+            <rect x="326" y="31" width="30" height="9" rx="4" fill="#9370db"/>
+            <!-- hero headline -->
+            <rect x="100" y="72" width="200" height="14" rx="4" fill="#f0ecff66"/>
+            <rect x="120" y="93" width="160" height="10" rx="3" fill="#f0ecff33"/>
+            <!-- CTA button -->
+            <rect x="145" y="115" width="110" height="26" rx="7" fill="#9370db"/>
+            <rect x="163" y="123" width="74" height="10" rx="3" fill="#fff9"/>
+            <!-- glow orb -->
+            <ellipse cx="200" cy="120" rx="90" ry="60" fill="url(#lg1)" opacity="0.25"/>
+            <defs>
+              <radialGradient id="lg1" cx="50%" cy="50%">
+                <stop offset="0%" stop-color="#9370db"/>
+                <stop offset="100%" stop-color="#9370db00"/>
+              </radialGradient>
+            </defs>
+            <!-- bottom stat strip -->
+            <rect x="30" y="170" width="100" height="30" rx="6" fill="#120e22" stroke="#9370db33" stroke-width="1"/>
+            <rect x="150" y="170" width="100" height="30" rx="6" fill="#120e22" stroke="#9370db33" stroke-width="1"/>
+            <rect x="270" y="170" width="100" height="30" rx="6" fill="#120e22" stroke="#9370db33" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="store-card-body">
+          <h3>Landing Page</h3>
+          <p>A focused, high-converting single page to capture leads and present your brand powerfully.</p>
+          <div class="store-card-footer">
+            <span class="store-price">₦ 95,000</span>
+            <a href="./products/landing/" class="store-btn">View Details →</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- Inline script for menu toggle -->
-    <script>
-        const menuBtn = document.getElementById("menuBtn");
-        const navMenu = document.getElementById("navMenu");
+      <!-- BLOG SITE -->
+      <div class="store-card">
+        <div class="store-card-img-wrap">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="store-card-svg">
+            <rect width="400" height="220" fill="#0d0a1a"/>
+            <line x1="0" y1="40" x2="400" y2="40" stroke="#9370db22" stroke-width="1"/>
+            <line x1="0" y1="80" x2="400" y2="80" stroke="#9370db22" stroke-width="1"/>
+            <line x1="0" y1="160" x2="400" y2="160" stroke="#9370db22" stroke-width="1"/>
+            <!-- header bar -->
+            <rect x="30" y="20" width="340" height="24" rx="5" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <rect x="42" y="28" width="60" height="7" rx="3" fill="#9370db"/>
+            <rect x="290" y="27" width="16" height="9" rx="3" fill="#9370db44"/>
+            <rect x="312" y="27" width="16" height="9" rx="3" fill="#9370db44"/>
+            <rect x="334" y="27" width="24" height="9" rx="4" fill="#9370db55"/>
+            <!-- featured post card -->
+            <rect x="30" y="56" width="220" height="110" rx="8" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <rect x="30" y="56" width="220" height="50" rx="8" fill="#9370db22"/>
+            <ellipse cx="140" cy="81" rx="50" ry="25" fill="#9370db33"/>
+            <rect x="42" y="118" width="140" height="9" rx="3" fill="#f0ecff55"/>
+            <rect x="42" y="133" width="100" height="7" rx="3" fill="#f0ecff33"/>
+            <rect x="42" y="148" width="60" height="7" rx="3" fill="#9370db66"/>
+            <!-- sidebar -->
+            <rect x="265" y="56" width="105" height="48" rx="6" fill="#120e22" stroke="#9370db33" stroke-width="1"/>
+            <rect x="275" y="65" width="50" height="7" rx="3" fill="#9370db"/>
+            <rect x="275" y="78" width="85" height="6" rx="3" fill="#f0ecff33"/>
+            <rect x="275" y="90" width="70" height="6" rx="3" fill="#f0ecff22"/>
+            <rect x="265" y="114" width="105" height="52" rx="6" fill="#120e22" stroke="#9370db33" stroke-width="1"/>
+            <rect x="275" y="122" width="40" height="7" rx="3" fill="#9370db"/>
+            <rect x="275" y="135" width="85" height="6" rx="3" fill="#f0ecff33"/>
+            <rect x="275" y="147" width="60" height="6" rx="3" fill="#f0ecff22"/>
+            <!-- post list strip -->
+            <rect x="30" y="178" width="155" height="22" rx="5" fill="#120e22" stroke="#9370db22" stroke-width="1"/>
+            <rect x="195" y="178" width="80" height="22" rx="5" fill="#120e22" stroke="#9370db22" stroke-width="1"/>
+            <rect x="285" y="178" width="85" height="22" rx="5" fill="#120e22" stroke="#9370db22" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="store-card-body">
+          <h3>Blog Site</h3>
+          <p>SEO-optimised blog platform for creators, journalists and brands building an audience.</p>
+          <div class="store-card-footer">
+            <span class="store-price">₦ 165,000</span>
+            <a href="./products/blog/" class="store-btn">View Details →</a>
+          </div>
+        </div>
+      </div>
 
-        menuBtn.addEventListener("click", () => {
-            navMenu.classList.toggle("show");
-            menuBtn.textContent = navMenu.classList.contains("show") ? "✕" : "☰";
-        });
-    </script>
+      <!-- BUSINESS WEBSITE (Popular) -->
+      <div class="store-card store-card-featured">
+        <div class="store-featured-badge">Popular</div>
+        <div class="store-card-img-wrap">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="store-card-svg">
+            <rect width="400" height="220" fill="#0d0a1a"/>
+            <line x1="0" y1="55" x2="400" y2="55" stroke="#9370db22" stroke-width="1"/>
+            <line x1="0" y1="110" x2="400" y2="110" stroke="#9370db22" stroke-width="1"/>
+            <line x1="0" y1="165" x2="400" y2="165" stroke="#9370db22" stroke-width="1"/>
+            <line x1="100" y1="0" x2="100" y2="220" stroke="#9370db22" stroke-width="1"/>
+            <line x1="200" y1="0" x2="200" y2="220" stroke="#9370db22" stroke-width="1"/>
+            <line x1="300" y1="0" x2="300" y2="220" stroke="#9370db22" stroke-width="1"/>
+            <!-- nav -->
+            <rect x="0" y="0" width="400" height="36" fill="#120e2299"/>
+            <circle cx="24" cy="18" r="7" fill="#9370db"/>
+            <rect x="40" y="14" width="40" height="8" rx="3" fill="#9370dbaa"/>
+            <rect x="240" y="14" width="28" height="8" rx="3" fill="#f0ecff33"/>
+            <rect x="274" y="14" width="28" height="8" rx="3" fill="#f0ecff33"/>
+            <rect x="308" y="14" width="28" height="8" rx="3" fill="#f0ecff33"/>
+            <rect x="342" y="13" width="44" height="10" rx="5" fill="#9370db"/>
+            <!-- hero -->
+            <rect x="30" y="52" width="175" height="13" rx="4" fill="#f0ecff77"/>
+            <rect x="30" y="71" width="130" height="9" rx="3" fill="#f0ecff44"/>
+            <rect x="30" y="86" width="80" height="18" rx="5" fill="#9370db"/>
+            <!-- hero visual / window -->
+            <rect x="220" y="44" width="155" height="90" rx="8" fill="#120e22" stroke="#9370db55" stroke-width="1"/>
+            <rect x="220" y="44" width="155" height="22" rx="8" fill="#9370db22"/>
+            <circle cx="234" cy="55" r="5" fill="#9370db66"/>
+            <rect x="248" y="51" width="60" height="7" rx="3" fill="#9370db44"/>
+            <rect x="232" y="75" width="130" height="8" rx="3" fill="#f0ecff33"/>
+            <rect x="232" y="89" width="100" height="8" rx="3" fill="#f0ecff22"/>
+            <rect x="232" y="103" width="60" height="20" rx="5" fill="#9370db55"/>
+            <!-- 3 service cards -->
+            <rect x="30" y="148" width="100" height="52" rx="7" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <circle cx="50" cy="164" r="8" fill="#9370db33"/>
+            <rect x="36" y="178" width="80" height="7" rx="3" fill="#f0ecff33"/>
+            <rect x="36" y="190" width="60" height="6" rx="3" fill="#f0ecff22"/>
+            <rect x="150" y="148" width="100" height="52" rx="7" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <circle cx="170" cy="164" r="8" fill="#9370db33"/>
+            <rect x="156" y="178" width="80" height="7" rx="3" fill="#f0ecff33"/>
+            <rect x="156" y="190" width="60" height="6" rx="3" fill="#f0ecff22"/>
+            <rect x="270" y="148" width="100" height="52" rx="7" fill="#120e22" stroke="#9370db55" stroke-width="1.5"/>
+            <circle cx="290" cy="164" r="8" fill="#9370db66"/>
+            <rect x="276" y="178" width="80" height="7" rx="3" fill="#f0ecff44"/>
+            <rect x="276" y="190" width="60" height="6" rx="3" fill="#f0ecff33"/>
+          </svg>
+        </div>
+        <div class="store-card-body">
+          <h3>Business Website</h3>
+          <p>Professional multi-page business website with services, about, contact, and more.</p>
+          <div class="store-card-footer">
+            <span class="store-price">₦ 280,000</span>
+            <a href="./products/business-site/" class="store-btn">View Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUSTOM WEBSITE -->
+      <div class="store-card">
+        <div class="store-card-img-wrap">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="store-card-svg">
+            <rect width="400" height="220" fill="#0d0a1a"/>
+            <!-- subtle circuit lines -->
+            <line x1="0" y1="60" x2="130" y2="60" stroke="#9370db22" stroke-width="1"/>
+            <line x1="130" y1="60" x2="130" y2="160" stroke="#9370db22" stroke-width="1"/>
+            <line x1="130" y1="160" x2="400" y2="160" stroke="#9370db22" stroke-width="1"/>
+            <line x1="270" y1="0" x2="270" y2="60" stroke="#9370db22" stroke-width="1"/>
+            <line x1="270" y1="60" x2="400" y2="60" stroke="#9370db22" stroke-width="1"/>
+            <!-- terminal / code window -->
+            <rect x="30" y="24" width="250" height="140" rx="10" fill="#120e22" stroke="#9370db55" stroke-width="1"/>
+            <rect x="30" y="24" width="250" height="28" rx="10" fill="#9370db22"/>
+            <rect x="30" y="38" width="250" height="14" fill="#9370db22"/>
+            <circle cx="50" cy="38" r="5" fill="#ff6b6b88"/>
+            <circle cx="66" cy="38" r="5" fill="#ffd93d88"/>
+            <circle cx="82" cy="38" r="5" fill="#6bcb7788"/>
+            <rect x="120" y="34" width="80" height="8" rx="3" fill="#9370db44"/>
+            <!-- code lines -->
+            <rect x="46" y="64" width="30" height="7" rx="2" fill="#c084fc99"/>
+            <rect x="82" y="64" width="60" height="7" rx="2" fill="#9370db66"/>
+            <rect x="148" y="64" width="40" height="7" rx="2" fill="#f0ecff33"/>
+            <rect x="56" y="79" width="80" height="7" rx="2" fill="#f0ecff44"/>
+            <rect x="142" y="79" width="50" height="7" rx="2" fill="#9370db55"/>
+            <rect x="46" y="94" width="40" height="7" rx="2" fill="#c084fc66"/>
+            <rect x="92" y="94" width="100" height="7" rx="2" fill="#9370db44"/>
+            <rect x="56" y="109" width="60" height="7" rx="2" fill="#f0ecff33"/>
+            <rect x="122" y="109" width="80" height="7" rx="2" fill="#9370db55"/>
+            <rect x="46" y="124" width="120" height="7" rx="2" fill="#f0ecff22"/>
+            <rect x="46" y="139" width="30" height="7" rx="2" fill="#c084fc99"/>
+            <rect x="82" y="139" width="90" height="7" rx="2" fill="#9370db44"/>
+            <!-- right panel -->
+            <rect x="296" y="24" width="78" height="78" rx="8" fill="#120e22" stroke="#9370db55" stroke-width="1"/>
+            <circle cx="335" cy="55" r="20" fill="#9370db22" stroke="#9370db" stroke-width="1.5"/>
+            <circle cx="335" cy="55" r="10" fill="#9370db55"/>
+            <circle cx="335" cy="55" r="4" fill="#9370db"/>
+            <rect x="296" y="114" width="78" height="50" rx="8" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <rect x="308" y="124" width="55" height="7" rx="3" fill="#9370db55"/>
+            <rect x="308" y="137" width="40" height="6" rx="3" fill="#f0ecff33"/>
+            <rect x="308" y="149" width="50" height="10" rx="4" fill="#9370db"/>
+            <!-- bottom bar -->
+            <rect x="30" y="176" width="344" height="22" rx="5" fill="#120e2299" stroke="#9370db22" stroke-width="1"/>
+            <rect x="42" y="183" width="80" height="7" rx="3" fill="#9370db55"/>
+            <rect x="290" y="183" width="70" height="7" rx="3" fill="#f0ecff22"/>
+          </svg>
+        </div>
+        <div class="store-card-body">
+          <h3>Custom Website</h3>
+          <p>Built entirely around your unique workflow, brand identity, and business requirements.</p>
+          <div class="store-card-footer">
+            <span class="store-price">₦ 200,000</span>
+            <a href="./products/custom-site/" class="store-btn">View Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- E-COMMERCE (Premium) -->
+      <div class="store-card store-card-featured">
+        <div class="store-featured-badge">Premium</div>
+        <div class="store-card-img-wrap">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="store-card-svg">
+            <rect width="400" height="220" fill="#0d0a1a"/>
+            <line x1="0" y1="44" x2="400" y2="44" stroke="#9370db22" stroke-width="1"/>
+            <!-- top bar -->
+            <rect x="0" y="0" width="400" height="36" fill="#120e2299"/>
+            <circle cx="22" cy="18" r="6" fill="#9370db"/>
+            <rect x="36" y="14" width="50" height="8" rx="3" fill="#9370dbaa"/>
+            <!-- search bar -->
+            <rect x="130" y="12" width="140" height="12" rx="6" fill="#9370db22" stroke="#9370db44" stroke-width="1"/>
+            <rect x="140" y="16" width="60" height="5" rx="2" fill="#f0ecff22"/>
+            <!-- cart icon area -->
+            <rect x="358" y="12" width="28" height="12" rx="5" fill="#9370db55"/>
+            <!-- product grid 2x2 -->
+            <rect x="20" y="52" width="85" height="90" rx="7" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <rect x="20" y="52" width="85" height="50" rx="7" fill="#9370db22"/>
+            <ellipse cx="62" cy="77" rx="22" ry="16" fill="#9370db44"/>
+            <rect x="28" y="110" width="70" height="7" rx="3" fill="#f0ecff44"/>
+            <rect x="28" y="123" width="45" height="8" rx="3" fill="#9370db"/>
+            <rect x="115" y="52" width="85" height="90" rx="7" fill="#120e22" stroke="#9370db55" stroke-width="1.5"/>
+            <rect x="115" y="52" width="85" height="50" rx="7" fill="#9370db33"/>
+            <ellipse cx="157" cy="77" rx="22" ry="16" fill="#9370db66"/>
+            <rect x="123" y="110" width="70" height="7" rx="3" fill="#f0ecff55"/>
+            <rect x="123" y="123" width="45" height="8" rx="3" fill="#9370db"/>
+            <rect x="210" y="52" width="85" height="90" rx="7" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <rect x="210" y="52" width="85" height="50" rx="7" fill="#9370db22"/>
+            <ellipse cx="252" cy="77" rx="22" ry="16" fill="#9370db44"/>
+            <rect x="218" y="110" width="70" height="7" rx="3" fill="#f0ecff44"/>
+            <rect x="218" y="123" width="45" height="8" rx="3" fill="#9370db"/>
+            <!-- cart sidebar -->
+            <rect x="306" y="52" width="78" height="130" rx="8" fill="#120e22" stroke="#9370db55" stroke-width="1"/>
+            <rect x="314" y="62" width="62" height="8" rx="3" fill="#9370db"/>
+            <rect x="314" y="76" width="62" height="28" rx="5" fill="#9370db22"/>
+            <rect x="314" y="110" width="62" height="18" rx="4" fill="#9370db22"/>
+            <rect x="314" y="134" width="62" height="10" rx="3" fill="#f0ecff33"/>
+            <rect x="314" y="162" width="62" height="14" rx="5" fill="#9370db"/>
+            <!-- footer strip -->
+            <rect x="20" y="152" width="180" height="22" rx="5" fill="#120e2266" stroke="#9370db22" stroke-width="1"/>
+            <rect x="30" y="159" width="100" height="7" rx="3" fill="#f0ecff22"/>
+          </svg>
+        </div>
+        <div class="store-card-body">
+          <h3>E-Commerce Website</h3>
+          <p>Full online store with payment integration, inventory management and order tracking.</p>
+          <div class="store-card-footer">
+            <span class="store-price">₦ 720,000</span>
+            <a href="./products/e-commerce_site/" class="store-btn">View Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PORTFOLIO -->
+      <div class="store-card">
+        <div class="store-card-img-wrap">
+          <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="store-card-svg">
+            <rect width="400" height="220" fill="#0d0a1a"/>
+            <defs>
+              <radialGradient id="pg" cx="50%" cy="50%">
+                <stop offset="0%" stop-color="#9370db" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#9370db" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <ellipse cx="200" cy="110" rx="160" ry="90" fill="url(#pg)"/>
+            <!-- large name/title block -->
+            <rect x="30" y="28" width="200" height="18" rx="5" fill="#f0ecff66"/>
+            <rect x="30" y="52" width="130" height="11" rx="4" fill="#9370db88"/>
+            <!-- avatar circle -->
+            <circle cx="340" cy="60" r="40" fill="#120e22" stroke="#9370db55" stroke-width="1.5"/>
+            <circle cx="340" cy="52" r="16" fill="#9370db44"/>
+            <ellipse cx="340" cy="84" rx="24" ry="12" fill="#9370db33"/>
+            <!-- work grid -->
+            <rect x="30" y="90" width="110" height="70" rx="8" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <rect x="30" y="90" width="110" height="40" rx="8" fill="#9370db22"/>
+            <rect x="36" y="98" width="40" height="24" rx="4" fill="#9370db44"/>
+            <rect x="82" y="98" width="52" height="24" rx="4" fill="#9370db33"/>
+            <rect x="36" y="140" width="80" height="7" rx="3" fill="#f0ecff44"/>
+            <rect x="36" y="152" width="55" height="6" rx="3" fill="#9370db66"/>
+            <rect x="152" y="90" width="110" height="70" rx="8" fill="#120e22" stroke="#9370db55" stroke-width="1.5"/>
+            <rect x="152" y="90" width="110" height="40" rx="8" fill="#9370db33"/>
+            <rect x="158" y="98" width="98" height="24" rx="4" fill="#9370db55"/>
+            <rect x="158" y="140" width="80" height="7" rx="3" fill="#f0ecff55"/>
+            <rect x="158" y="152" width="55" height="6" rx="3" fill="#9370db77"/>
+            <rect x="274" y="90" width="100" height="70" rx="8" fill="#120e22" stroke="#9370db44" stroke-width="1"/>
+            <rect x="274" y="90" width="100" height="40" rx="8" fill="#9370db22"/>
+            <rect x="280" y="98" width="88" height="24" rx="4" fill="#9370db44"/>
+            <rect x="280" y="140" width="70" height="7" rx="3" fill="#f0ecff44"/>
+            <rect x="280" y="152" width="50" height="6" rx="3" fill="#9370db55"/>
+            <!-- CTA row -->
+            <rect x="30" y="176" width="120" height="22" rx="6" fill="#9370db"/>
+            <rect x="162" y="176" width="100" height="22" rx="6" fill="#9370db22" stroke="#9370db55" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="store-card-body">
+          <h3>Portfolio Website</h3>
+          <p>Elegant creative portfolio to showcase your work and attract high-value clients.</p>
+          <div class="store-card-footer">
+            <span class="store-price">₦ 210,000</span>
+            <a href="./products/portfolio/" class="store-btn">View Details →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CTA STRIP ===== -->
+  <section class="store-cta">
+    <div class="store-cta-inner">
+      <div>
+        <h2>Not sure which package fits you?</h2>
+        <p>Chat with us and we'll recommend the right solution for your budget and goals.</p>
+      </div>
+      <a href="https://wa.me/2349029673978?text=Hello%20I%20would%20like%20more%20information%20about%20your%20website%20packages"
+         target="_blank" rel="noopener" class="store-cta-btn">
+        💬 WhatsApp Us
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="store-footer">
+    <div class="store-footer-inner">
+      <div class="store-footer-brand">
+        Meisophant <span>Store</span>
+      </div>
+      <div class="store-footer-links">
+        <a href="./privacy-policy.html">Privacy Policy</a>
+        <span>·</span>
+        <a href="./terms.html">Terms &amp; Conditions</a>
+        <span>·</span>
+        <a href="https://meisophant.name.ng" target="_blank" rel="noopener">Main Site</a>
+      </div>
+      <p class="store-footer-copy">© 2026 Meisophant Digital Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/2349029673978" class="store-whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+  <script src="./script.js" defer></script>
+  <script src="./img-load.js" defer></script>
+  <script>
+    /* ===== MOBILE MENU ===== */
+    const menuBtn = document.getElementById('menuBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    menuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+      menuBtn.textContent = navMenu.classList.contains('show') ? '✕' : '☰';
+    });
+
+    document.querySelectorAll('.store-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+        menuBtn.textContent = '☰';
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        navMenu.classList.remove('show');
+        menuBtn.textContent = '☰';
+      }
+    });
+
+    /* ===== SCROLL REVEAL ===== */
+    const cards = document.querySelectorAll('.store-card');
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          e.target.style.transitionDelay = `${(i % 3) * 0.08}s`;
+          e.target.classList.add('visible');
+          cardObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(c => cardObserver.observe(c));
+  </script>
 </body>
 </html>
-
